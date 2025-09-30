@@ -1,0 +1,22 @@
+# data/__init__.py
+# Inicialización del paquete data
+
+from .clientes_bd import consultar_cliente, CLIENTES_BD, obtener_estadisticas_bd
+from .buro_simulado import (
+    consultar_buro, 
+    REPORTES_BURO, 
+    interpretar_score_buro, 
+    obtener_resumen_buro
+)
+
+__all__ = [
+    # Base de datos de clientes
+    'consultar_cliente',
+    'CLIENTES_BD', 
+    'obtener_estadisticas_bd',
+    # Buró de crédito
+    'consultar_buro',
+    'REPORTES_BURO',
+    'interpretar_score_buro',
+    'obtener_resumen_buro'
+]
